@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MP3</string>
+    <string-array name="singers">
+        <item>Eminem</item>
+        <item>Ed Sheeran</item>
+        <item>Bruno Mars</item>
+    </string-array>
+    <string-array name="songs">
+        <item>Not Afraid</item>
+        <item>Shape of You</item>
+        <item>The Lazy Song</item>
+    </string-array>
+</resources>
