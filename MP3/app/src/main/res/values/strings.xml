@@ -1,13 +1,19 @@
 <resources>
     <string name="app_name">MP3</string>
+    <string name="noRewind">Nije proslo 10 sekudni od pesme</string>
+    <string name="songComplete">Pesma zavrsena</string>
     <string-array name="singers">
+        <item>Justin Timberlake</item>
         <item>Eminem</item>
         <item>Ed Sheeran</item>
+        <item>John Denver</item>
         <item>Bruno Mars</item>
     </string-array>
     <string-array name="songs">
+        <item>Cant Stop the Feeling</item>
         <item>Not Afraid</item>
         <item>Shape of You</item>
+        <item>Take Me Home, Country Roads</item>
         <item>The Lazy Song</item>
     </string-array>
 </resources>

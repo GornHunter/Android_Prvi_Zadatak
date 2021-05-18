@@ -24,10 +24,11 @@ public class CustomAdapter extends BaseAdapter {
         Resources resource = context.getResources();
         String[] singers = resource.getStringArray(R.array.singers);
         String[] songs = resource.getStringArray(R.array.songs);
-        int[] images = {R.drawable.eminem, R.drawable.ed_sheeran, R.drawable.bruno_mars};
+        int[] images = {R.drawable.justin_timberlake, R.drawable.eminem, R.drawable.ed_sheeran, R.drawable.john_denver, R.drawable.bruno_mars};
+        int[] mp3s = {R.raw.cant_stop_the_feeling, R.raw.not_afraid, R.raw.shape_of_you, R.raw.take_me_home_country_roads, R.raw.the_lazy_song};
 
         for(int i = 0;i < singers.length;i++)
-            list.add(new SingleRow(singers[i], songs[i], images[i]));
+            list.add(new SingleRow(singers[i], songs[i], images[i], mp3s[i]));
     }
 
     @Override
@@ -63,20 +64,6 @@ public class CustomAdapter extends BaseAdapter {
         textViewSinger.setText(sr.getSinger());
         textViewSong.setText(sr.getSong());
 
-        textViewSinger.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String m = showSong(position);
-            }
-        });
-
         return view;
-    }
-
-    public String showSong(final int position){
-        return list.get(position).getSinger() + "=" + list.get(position).getSong() + "=" + list.get(position).getImage();
-        //Intent intent = new Intent(this, SecondActivity.class);
-        //intent.putExtra(EXTRA_MESSAGE, data);
-        //startActivityForResult(intent,CONFIRMATION_REQUEST);
     }
 }

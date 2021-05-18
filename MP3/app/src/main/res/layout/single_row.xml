@@ -16,7 +16,11 @@
         android:id="@+id/textViewSinger"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        android:gravity="end"
         android:layout_toRightOf="@+id/imageView"
+        android:layout_marginTop="10px"
+        android:layout_marginRight="20px"
         android:text="Eminem"
         android:textSize="25sp" />
 
@@ -26,7 +30,11 @@
         android:id="@+id/textViewSong"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        android:gravity="end"
         android:layout_toRightOf="@+id/imageView"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="20px"
         android:layout_below="@+id/textViewSinger"
         android:textSize="20sp"
         android:text="Not Afraid" />
